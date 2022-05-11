@@ -2,9 +2,6 @@
 
 namespace App\Services;
 
-
-use Google\Service\Sheets\BatchClearValuesRequest;
-use Google\Service\Sheets\ClearValuesRequest;
 use Google\Service\Sheets\UpdateValuesResponse;
 use Google_Client;
 use Google_Service_Sheets;
