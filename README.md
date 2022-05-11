@@ -34,11 +34,13 @@ Use **select** to specify the columns you need to see in the Google Sheet table.
 
 For example to select columns 'first_name', 'last_name', 'email', 'phone' use the following line:
 
-`$rows = User::query()
-->select('first_name', 'last_name', 'email', 'phone')
-->orderBy('id')
-->limit(10000)
-->get();`
+```
+$rows = User::query()
+    ->select('first_name', 'last_name', 'email', 'phone')
+    ->orderBy('id')
+    ->limit(10000)
+    ->get();
+```
 
 Also, you can edit (and then use) a command
 `php artisan sync:entries` to manipulate another table/s.
